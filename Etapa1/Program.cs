@@ -20,31 +20,47 @@ namespace Etapa1
                 new Curso(){ Nombre = "301"}
             };
 
-            escuela.Cursos.Add(new Curso(){Nombre = "102", Jornada = TiposJornada.Tarde});
-            escuela.Cursos.Add(new Curso(){Nombre = "202", Jornada = TiposJornada.Tarde});
+            escuela.Cursos.Add(new Curso() { Nombre = "102", Jornada = TiposJornada.Tarde });
+            escuela.Cursos.Add(new Curso() { Nombre = "202", Jornada = TiposJornada.Tarde });
 
             var nuevosCursos = new List<Curso>(){
                 new Curso(){ Nombre = "401" },
                 new Curso(){ Nombre = "501" },
                 new Curso(){ Nombre = "601"}
-            }; 
-           // Curso tmp = new Curso(){Nombre = "vacacional", Jornada = TiposJornada.Noche};
+            };
+            // Curso tmp = new Curso(){Nombre = "vacacional", Jornada = TiposJornada.Noche};
 
-           // nuevosCursos.Clear(); // se encarga de eliminar todos los items de la lista
-            
+            // nuevosCursos.Clear(); // se encarga de eliminar todos los items de la lista
+
             escuela.Cursos.AddRange(nuevosCursos);
             //escuela.Cursos.Add(tmp);
             ImprimirCursosEscuela(escuela);
             //WriteLine("Curso.Hash"+tmp.GetHashCode());
-           // escuela.Cursos.Remove(tmp);
+            // escuela.Cursos.Remove(tmp);
 
-           Predicate<Curso> MiAlgoritmo = predicado;
-            escuela.Cursos.RemoveAll(MiAlgoritmo);
+            //Forma de trabajar predicados es necesario usar un metodo llamado Predicado
+            //Predicate<Curso> MiAlgoritmo = Predicado;
+            //escuela.Cursos.RemoveAll(MiAlgoritmo);
+            //se puede asignar el nombre del metodo sin necesidad de especificar el predicado
+            //escuela.Cursos.RemoveAll(Predicado);
+
+            //optimizando predicados
+            escuela.Cursos.RemoveAll(delegate (Curso curobj)
+                                    {
+                                        return curobj.Nombre == "301";
+                                    }
+            );
+
+            // Expresiones lambda
+            escuela.Cursos.RemoveAll((curobj)=>curobj.Nombre == "601" );
+
+
             ImprimirCursosEscuela(escuela);
 
         }
 
-        private static bool predicado(Curso curobj)
+        /// Se utiliza para comentar el siguiente metodo.
+        private static bool Predicado(Curso curobj)
         {
             return curobj.Nombre == "301";
         }
