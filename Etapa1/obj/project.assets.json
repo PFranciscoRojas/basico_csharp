@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\A Material de estudio\\Platzi\\platziNet\\Etapa1\\Etapa1.csproj",
+      "projectUniqueName": "C:\\Users\\Pacho\\Documents\\Platzi\\basico_csharp\\Etapa1\\Etapa1.csproj",
       "projectName": "Etapa1",
-      "projectPath": "D:\\A Material de estudio\\Platzi\\platziNet\\Etapa1\\Etapa1.csproj",
+      "projectPath": "C:\\Users\\Pacho\\Documents\\Platzi\\basico_csharp\\Etapa1\\Etapa1.csproj",
       "packagesPath": "C:\\Users\\Pacho\\.nuget\\packages\\",
-      "outputPath": "D:\\A Material de estudio\\Platzi\\platziNet\\Etapa1\\obj\\",
+      "outputPath": "C:\\Users\\Pacho\\Documents\\Platzi\\basico_csharp\\Etapa1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
