@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Pacho\\Documents\\Platzi\\basico_csharp\\Etapa1\\Etapa1.csproj": {}
+    "D:\\A Material de estudio\\Platzi\\platziNet\\Etapa1\\Etapa1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Pacho\\Documents\\Platzi\\basico_csharp\\Etapa1\\Etapa1.csproj": {
+    "D:\\A Material de estudio\\Platzi\\platziNet\\Etapa1\\Etapa1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pacho\\Documents\\Platzi\\basico_csharp\\Etapa1\\Etapa1.csproj",
+        "projectUniqueName": "D:\\A Material de estudio\\Platzi\\platziNet\\Etapa1\\Etapa1.csproj",
         "projectName": "Etapa1",
-        "projectPath": "C:\\Users\\Pacho\\Documents\\Platzi\\basico_csharp\\Etapa1\\Etapa1.csproj",
+        "projectPath": "D:\\A Material de estudio\\Platzi\\platziNet\\Etapa1\\Etapa1.csproj",
         "packagesPath": "C:\\Users\\Pacho\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pacho\\Documents\\Platzi\\basico_csharp\\Etapa1\\obj\\",
+        "outputPath": "D:\\A Material de estudio\\Platzi\\platziNet\\Etapa1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

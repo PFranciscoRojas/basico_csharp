@@ -2,74 +2,25 @@
 using System.Collections.Generic;
 using CoreEscuela.Entidades;
 using static System.Console;
+using CoreEscuela.Util;
 
-namespace Etapa1
+namespace CoreEscuela
 {
     class Program
     {
         static void Main(string[] args)
         {
-            var escuela = new Escuela("Platzi academy", 2017, TiposEscuela.Primaria,
-                pais: "Colombia", ciudad: "Pasto");
-
-            // así funcionan las colecciones, en las nuevas versiones 
-            // se pueden agregar valores igual que un arreglo
-            escuela.Cursos = new List<Curso>(){
-                new Curso(){ Nombre = "101" },
-                new Curso(){ Nombre = "201" },
-                new Curso(){ Nombre = "301"}
-            };
-
-            escuela.Cursos.Add(new Curso() { Nombre = "102", Jornada = TiposJornada.Tarde });
-            escuela.Cursos.Add(new Curso() { Nombre = "202", Jornada = TiposJornada.Tarde });
-
-            var nuevosCursos = new List<Curso>(){
-                new Curso(){ Nombre = "401" },
-                new Curso(){ Nombre = "501" },
-                new Curso(){ Nombre = "601"}
-            };
-            // Curso tmp = new Curso(){Nombre = "vacacional", Jornada = TiposJornada.Noche};
-
-            // nuevosCursos.Clear(); // se encarga de eliminar todos los items de la lista
-
-            escuela.Cursos.AddRange(nuevosCursos);
-            //escuela.Cursos.Add(tmp);
-            ImprimirCursosEscuela(escuela);
-            //WriteLine("Curso.Hash"+tmp.GetHashCode());
-            // escuela.Cursos.Remove(tmp);
-
-            //Forma de trabajar predicados es necesario usar un metodo llamado Predicado
-            //Predicate<Curso> MiAlgoritmo = Predicado;
-            //escuela.Cursos.RemoveAll(MiAlgoritmo);
-            //se puede asignar el nombre del metodo sin necesidad de especificar el predicado
-            //escuela.Cursos.RemoveAll(Predicado);
-
-            //optimizando predicados
-            escuela.Cursos.RemoveAll(delegate (Curso curobj)
-                                    {
-                                        return curobj.Nombre == "301";
-                                    }
-            );
-
-            // Expresiones lambda
-            escuela.Cursos.RemoveAll((curobj)=>curobj.Nombre == "601" );
-
-
-            ImprimirCursosEscuela(escuela);
-
+            var engine = new EscuelaEngine();
+            engine.Inicializar();
+            Printer.WriteTittle("Bienvenidos a la Escuela");
+            Printer.Beep(10000,cantidad:5);
+            ImprimirCursosEscuela(engine.Escuela);
         }
 
-        /// Se utiliza para comentar el siguiente metodo.
-        private static bool Predicado(Curso curobj)
-        {
-            return curobj.Nombre == "301";
-        }
 
         private static void ImprimirCursosEscuela(Escuela escuela)
         {
-            WriteLine("===================");
-            WriteLine("Cursos de la Escuela");
-            WriteLine("====================");
+                Printer.WriteTittle("Cursos de la Escuela");
             // el interrogante evalua escuela y cursos
             // si escuela esta nulo no evaluara cursos
             if (escuela?.Cursos != null)
