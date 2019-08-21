@@ -20,3 +20,14 @@ C:\Users\Pacho\Documents\Platzi\basico_csharp\Etapa1\obj\Debug\netcoreapp2.2\Eta
 C:\Users\Pacho\Documents\Platzi\basico_csharp\Etapa1\obj\Debug\netcoreapp2.2\Etapa1.AssemblyInfo.cs
 C:\Users\Pacho\Documents\Platzi\basico_csharp\Etapa1\obj\Debug\netcoreapp2.2\Etapa1.dll
 C:\Users\Pacho\Documents\Platzi\basico_csharp\Etapa1\obj\Debug\netcoreapp2.2\Etapa1.pdb
+d:\A Material de estudio\Platzi\C#\platziNet\Etapa1\obj\Debug\netcoreapp2.2\Etapa1.csprojAssemblyReference.cache
+d:\A Material de estudio\Platzi\C#\platziNet\Etapa1\obj\Debug\netcoreapp2.2\Etapa1.csproj.CoreCompileInputs.cache
+d:\A Material de estudio\Platzi\C#\platziNet\Etapa1\obj\Debug\netcoreapp2.2\Etapa1.AssemblyInfoInputs.cache
+d:\A Material de estudio\Platzi\C#\platziNet\Etapa1\obj\Debug\netcoreapp2.2\Etapa1.AssemblyInfo.cs
+d:\A Material de estudio\Platzi\C#\platziNet\Etapa1\obj\Debug\netcoreapp2.2\Etapa1.dll
+d:\A Material de estudio\Platzi\C#\platziNet\Etapa1\obj\Debug\netcoreapp2.2\Etapa1.pdb
+D:\A Material de estudio\Platzi\C#\platziNet\Etapa1\bin\Debug\netcoreapp2.2\Etapa1.deps.json
+D:\A Material de estudio\Platzi\C#\platziNet\Etapa1\bin\Debug\netcoreapp2.2\Etapa1.runtimeconfig.json
+D:\A Material de estudio\Platzi\C#\platziNet\Etapa1\bin\Debug\netcoreapp2.2\Etapa1.runtimeconfig.dev.json
+d:\A Material de estudio\Platzi\C#\platziNet\Etapa1\bin\Debug\netcoreapp2.2\Etapa1.dll
+d:\A Material de estudio\Platzi\C#\platziNet\Etapa1\bin\Debug\netcoreapp2.2\Etapa1.pdb

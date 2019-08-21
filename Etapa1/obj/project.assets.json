@@ -692,22 +692,24 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\A Material de estudio\\Platzi\\platziNet\\Etapa1\\Etapa1.csproj",
+      "projectUniqueName": "D:\\A Material de estudio\\Platzi\\C#\\platziNet\\Etapa1\\Etapa1.csproj",
       "projectName": "Etapa1",
-      "projectPath": "D:\\A Material de estudio\\Platzi\\platziNet\\Etapa1\\Etapa1.csproj",
+      "projectPath": "D:\\A Material de estudio\\Platzi\\C#\\platziNet\\Etapa1\\Etapa1.csproj",
       "packagesPath": "C:\\Users\\Pacho\\.nuget\\packages\\",
-      "outputPath": "D:\\A Material de estudio\\Platzi\\platziNet\\Etapa1\\obj\\",
+      "outputPath": "D:\\A Material de estudio\\Platzi\\C#\\platziNet\\Etapa1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Pacho\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Pacho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

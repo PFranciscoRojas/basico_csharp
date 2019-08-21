@@ -5,7 +5,7 @@ namespace CoreEscuela.Util
 {
     public static class Printer
     {
-        public static void DibujarLinea(int tamaño = 10)
+        public static void DrawLine(int tamaño = 10)
         {
             var linea = "".PadLeft(tamaño,'=');
             WriteLine(linea);
@@ -13,9 +13,9 @@ namespace CoreEscuela.Util
         public static void WriteTittle(string titulo)
         {
             var sizeLine= titulo.Length+4;
-            DibujarLinea(sizeLine);
+            DrawLine(sizeLine);
             WriteLine($"|  {titulo}   | ");
-            DibujarLinea(sizeLine);
+            DrawLine(sizeLine);
         }
      public static void Beep (int hz = 2000,int tiempo=500, int cantidad=1)
      {

@@ -2,15 +2,9 @@ using System.Collections.Generic;
 
 namespace CoreEscuela.Entidades
 {
-    public class Escuela
+    public class Escuela:objetoEscuelaBase
     {
-        string nombre;
-        public string Nombre
-        {
-            get { return "Copia: " + nombre; }
-            set { nombre = value.ToUpper(); }
-        }
-        public int AñoDeCreación { get; set; }
+         public int AñoDeCreación { get; set; }
         public string Pais { get; set; }
         public string Ciudad { get; set; }
         public TiposEscuela TipoEscuela { get; set; }

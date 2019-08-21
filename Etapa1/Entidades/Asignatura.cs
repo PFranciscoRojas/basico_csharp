@@ -1,12 +1,9 @@
 using System;
+using System.Collections.Generic;
 
 namespace CoreEscuela.Entidades
 {
-    public class Asignatura
+    public class Asignatura:objetoEscuelaBase
     {
-        public string Nombre { get; set; }
-        public string UniqueId { get; set; }
-
-        public Asignatura()=> UniqueId = Guid.NewGuid().ToString();
     }
 }
